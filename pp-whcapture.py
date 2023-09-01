@@ -12,7 +12,9 @@ def paypal_webhook():
 
     # Parse the incoming JSON payload
     payload = request.json
+    print("*****Webhook payload starts here********")
     print(payload)
+    print("*****Webhook payload ends here********")
     ##logging.basicConfig(filename='whevent.log',level=logging.DEBUG)
     # Handle the PayPal event based on the event type
     event_type = payload['event_type']
