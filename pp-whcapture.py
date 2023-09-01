@@ -18,7 +18,7 @@ def paypal_webhook():
     ##logging.basicConfig(filename='whevent.log',level=logging.DEBUG)
     # Handle the PayPal event based on the event type
     event_type = payload['event_type']
-    if event_type == 'PAYMENT.CAPTURE.COMPLETED':
+    if event_type == 'CHECKOUT.ORDER.VOIDED':
         # Handle completed payment capture event
         # Extract relevant information from payload
 
