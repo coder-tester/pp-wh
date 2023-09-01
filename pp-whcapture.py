@@ -23,7 +23,7 @@ def paypal_webhook():
         # Extract relevant information from payload
 
     # Respond to PayPal with a 200 OK
-        return jsonify({'status': 'success'})
+        return jsonify({'status': 'success'}, 200)
 
 if __name__ == '__main__':
     app.run()
