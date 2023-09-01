@@ -12,7 +12,8 @@ def paypal_webhook():
 
     # Parse the incoming JSON payload
     payload = request.json
-    logging.basicConfig(filename='whevent.log',level=logging.DEBUG)
+    console.log(JSON.stringify(payload))
+    ##logging.basicConfig(filename='whevent.log',level=logging.DEBUG)
     # Handle the PayPal event based on the event type
     event_type = payload['event_type']
     if event_type == 'PAYMENT.CAPTURE.COMPLETED':
