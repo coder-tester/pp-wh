@@ -12,7 +12,7 @@ def paypal_webhook():
 
     # Parse the incoming JSON payload
     payload = request.json
-    console.log(JSON.stringify(payload))
+    print(payload)
     ##logging.basicConfig(filename='whevent.log',level=logging.DEBUG)
     # Handle the PayPal event based on the event type
     event_type = payload['event_type']
